@@ -1,1 +1,1 @@
-Olá, esse é o ReadMe do nosso trabalho Canvas. Realizado em sala de aula, com a finalidade de representarmos nossa música selecionada: "Satanás" by Demonia -  como jogo StopMotion no Canvas.
+Olá, esse é o arquivo ReadMe. Onde seguimos intruções passadas em aula para a realização do projeto, na qual, nossa música escolhida para a criação do Canvas e StopMotion, foi: "Sataná" by Demonia.
