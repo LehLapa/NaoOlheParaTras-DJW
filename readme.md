@@ -4,3 +4,6 @@ Olá, esse é o arquivo ReadMe. Onde seguimos intruções passadas em aula para 
 
 # Diagrama de caso de uso 
 https://drive.google.com/file/d/1FVqv0_XGIV0ZJenb5KqtSjNzt-a3au4V/view?usp=sharing
+
+# diagrama de classe 
+https://drive.google.com/file/d/1FVqv0_XGIV0ZJenb5KqtSjNzt-a3au4V/view?usp=sharing
