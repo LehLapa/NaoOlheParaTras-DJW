@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html langue ="pt-br">
- <head>
-     <title>Nao Olhe Para Tras</title>
-     <meta charset="UTF-8"/>
-     <meta name= "viewport" content="width=device-width,initial-scale=1.0"/>
-     <meta name= "description" content="Titulo: projeto nao olhe para tras data: 08/2023"/>
-     <link rel="stylesheet" href = "CSS/style.css"/>
-     
-</head>
-<body>
-<canvas id="canva" height= "1640px" width= "1220px"></canvas>
-<script src= "JS/script.js"></script>
-
-
-</body>   
-</html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Não seja pego</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="shortcut icon" href="IMG/logo.png">
+    </head>
+    <body>
+        <div class="game">
+            <div class="cleide"></div>
+            <div class="sombra"></div>
+            <div class="score">Pontuação: <span id="score">0</span></div>
+            <div class="game-over">
+                <p>Foi pego!</p>
+                <button onclick="restartGame()">Tentar Novamente</button>
+            </div>
+        </div>
+        <script src="JS/script.js"></script>
+    </body>
+    </html>
