@@ -44,3 +44,86 @@ Este jogo simples em JavaScript permite que o jogador controle um personagem cha
 ## Fim de Jogo
 - Quando ocorre uma colisão, uma tela de "Fim de Jogo" é exibida.
 - Você pode reiniciar o jogo clicando no botão "Reiniciar".
+
+## Desenvolvimento
+- começamos fazendo classes: "cleide" que é a personagem, "sombra" inimigo, "score" pontuação e a classe de "gmae over"
+- ficando assim no javascript
+- const cleide = document.querySelector('.cleide');
+const sombra = document.querySelector('.sombra');
+const scoreDisplay = document.getElementById('score');
+const gameOverDisplay = document.querySelector('.game-over');
+
+- adicionamos o pulo para evitar os obstaculos/inimigo
+- function jump(e) {
+    if (e.key === ' ' && !isJumping && !isFalling) { // Barra de espaço
+        isJumping = true;
+        jumpAnimation();
+    }
+}
+
+function jumpAnimation() {
+    cleideY = 0;
+    cleide.style.bottom = cleideY + 'px';
+
+    let jumpHeight = 250; // Alt. máx. do pulo
+    let jumpDuration = 1500; // Duração do pulo em milissegundos
+
+    const jumpStartTime = Date.now();
+
+    function updateJump() {
+        const currentTime = Date.now();
+        const elapsedTime = currentTime - jumpStartTime;
+        const progress = Math.min(1, elapsedTime / jumpDuration);
+
+        cleideY = jumpHeight * (1 - progress);
+        cleide.style.bottom = cleideY + 'px';
+
+        if (progress < 1) {
+            requestAnimationFrame(updateJump);
+        } else {
+            isJumping = false;
+            fallAnimation();
+        }
+    }
+
+    requestAnimationFrame(updateJump);
+}
+
+function fallAnimation() {
+    let fallHeight = 0; // Alt. máx. da queda
+    let fallDuration = 500; // Duração da queda em milissegundos
+
+    const fallStartTime = Date.now();
+
+    function updateFall() {
+        const currentTime = Date.now();
+        const elapsedTime = currentTime - fallStartTime;
+        const progress = Math.min(1, elapsedTime / fallDuration);
+
+        cleideY = progress * fallHeight;
+        cleide.style.bottom = cleideY + 'px';
+
+        if (progress < 1) {
+            requestAnimationFrame(updateFall);
+        } else {
+            isFalling = false;
+        }
+    }
+
+    - tambem podemos movimentar ela 
+    function movecleide(e) {
+    const speed = 10;
+
+    if (e.key === 'ArrowLeft' && cleideX > 0) {
+        cleideX -= speed;
+    } else if (e.key === 'ArrowRight' && cleideX < 750) {
+        cleideX += speed;
+    }
+
+    cleide.style.left = cleideX + 'px';
+
+    // Verificar colisão
+    if (checkCollision()) {
+        gameOver();
+    }
+}
