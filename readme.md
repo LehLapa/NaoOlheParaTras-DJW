@@ -23,3 +23,24 @@ Ao lado esquerdo temos a Classe Cenario onde em seus métodos possui atributos p
 
 https://github.com/LehLapa/NaoOlheParaTras-DJW/assets/128614213/bd8928de-c924-4f81-9d19-989c7da709cb
 
+Este jogo simples em JavaScript permite que o jogador controle um personagem chamado "Cleide" para evitar obstáculos e ganhar pontos.
+
+## Como Jogar
+- Use as teclas de seta **esquerda** e **direita** para mover Cleide.
+- Pressione a tecla **espaço** para fazer Cleide pular.
+- Seu objetivo é evitar colidir com o obstáculo em movimento chamado "Sombra".
+- Cada evitação bem-sucedida aumenta sua pontuação.
+
+## Jogabilidade
+- Cleide começa na parte inferior da tela.
+- Você pode mover Cleide para a esquerda ou direita dentro dos limites da tela.
+- Pule para evitar o obstáculo.
+- Se Cleide colidir com o obstáculo, o jogo acaba.
+
+## Pontuação
+- Sua pontuação é exibida no topo.
+- Cada evitação bem-sucedida de obstáculo aumenta sua pontuação.
+
+## Fim de Jogo
+- Quando ocorre uma colisão, uma tela de "Fim de Jogo" é exibida.
+- Você pode reiniciar o jogo clicando no botão "Reiniciar".
