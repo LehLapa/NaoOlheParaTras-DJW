@@ -2,7 +2,8 @@
 Esse projeto segue intruções passadas em aula para sua realização, sendo nossa música escolhida para a criação do Canvas e StopMotion: "Sataná" by Demonia. 
 
 ## Autores 
-**Alunos:** Letícia da Lapa e Lucas Carvalho
+Aluna: Letícia da Lapa Silva
+Aluno: Lucas Carvalho
 
 **Cursando:** ETEC Professor Basilídes de Godoy - Ensino Médio Integrado ao Curso Técnico de Programação de Jogos Digitais. 2ºA/2023
 ##
