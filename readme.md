@@ -1,5 +1,7 @@
 # Não Olhe Para Tras - DJM (JS)
-Esse projeto segue intruções passadas em aula para sua realização, sendo nossa música escolhida para a criação do Canvas e StopMotion: "Sataná" by Demonia. 
+Esse projeto segue intruções passadas em aula para sua realização, sendo nossa música escolhida para a criação do Canvas e StopMotion:
+
+Música de Inspiração: **"Satanás" by Demonia**. 
 
 ## Integrantes
 - Aluna: Letícia da Lapa Silva
